@@ -139,6 +139,8 @@ python3 trader-risk/check.py                                           # PASS / 
 python3 trader-broker/ticket.py show                                   # the tickets, READY or not
 # India index options (NIFTY/BANKNIFTY/SENSEX)
 PYTHONPATH=trader-india python3 -c "from india import discover_nifty_contracts; print(discover_nifty_contracts('20250115')[:3])"
+python3 trader-scanner/run_auto.py                # auto-run scanner (local)
+PYTHONPATH=trader-india python3 trader-india/india.py    # auto-run India checks
 python3 -m unittest discover -s tests -v                            # all 315 tests
 python3 -m unittest tests.test_risk -v                               # single file
 python3 trader-alerts/alerts.py add --from-plan                        # stop, target, flat by close

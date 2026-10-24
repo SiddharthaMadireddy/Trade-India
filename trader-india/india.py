@@ -383,3 +383,9 @@ def get_valid_strike_range(
             max_strike = min(35000, strike + 5000)
 
     return min_strike, max_strike
+# Auto-run helper: runs India module checks automatically
+if __name__ == "__main__":
+    from .india import discover_nifty_contracts, get_india_timezone, validate_nifty_contract
+    print("Auto-check India module:")
+    print("Timezone:", get_india_timezone())
+    print("Sample valid contract:", validate_nifty_contract("NIFTY25050CE"))
