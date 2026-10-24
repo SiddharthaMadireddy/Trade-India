@@ -1027,6 +1027,12 @@ def _p(x):
     return "{:,.2f}".format(x)
 
 
+# AUTO-FIX: if external fetch fails, use fixtures/local data
+try:
+    from trader_scanner_fallback import build_local_watchlist
+except Exception:
+    pass
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Chart Scanner (trader-scanner): daily setups and opening-range breakouts.")
     sub = ap.add_subparsers(dest="cmd")
