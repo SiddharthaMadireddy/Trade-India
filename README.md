@@ -18,7 +18,7 @@ an order on its own. Paper trading is the default.
 
 > **Looking for the original Trader skill?** Copy an investor's 13F, the
 > stock screener, tax lots and rebalancing live in
-> [github.com/Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill).
+> [github.com/SiddharthaMadireddy/Trade-India](https://github.com/SiddharthaMadireddy/Trade-India).
 > This repo is its day-trading sequel: the Trader skill v2.
 
 ## Install
@@ -26,7 +26,7 @@ an order on its own. Paper trading is the default.
 Paste this into Claude:
 
 ```
-https://github.com/Jakeschincariol/day-trader-skill
+https://github.com/SiddharthaMadireddy/Trade-India
 
 install skill
 ```
@@ -34,8 +34,8 @@ install skill
 Or as a plugin, in Claude Code:
 
 ```
-/plugin marketplace add Jakeschincariol/day-trader-skill
-/plugin install day-trader-skill@day-trader-skill
+/plugin marketplace add SiddharthaMadireddy/Trade-India
+/plugin install Trade-India@Trade-India
 ```
 
 Claude Code namespaces plugin skills, so installed as a plugin they show up as
@@ -43,7 +43,7 @@ Claude Code namespaces plugin skills, so installed as a plugin they show up as
 plain `/trader-scanner`:
 
 ```bash
-git clone https://github.com/Jakeschincariol/day-trader-skill.git
+git clone https://github.com/SiddharthaMadireddy/Trade-India.git
 cp -r day-trader-skill/trader-* ~/.claude/skills/
 ```
 
